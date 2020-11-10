@@ -1,0 +1,688 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container--header {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding: 0px 20px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 0;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px rgb(158, 158, 158), -1px -1px 2px rgb(117, 117, 117), -1px 1px 2px rgb(105, 105, 105), 1px -1px 2px rgb(116, 116, 116);
+}
+
+.top--bars {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: #666;
+    cursor: pointer;
+}
+
+.header--logo {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__logo {
+    height: 60px;
+    width: 240px;
+}
+
+.header--navbar {
+    height: 60px;
+    width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding-top: 12px;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* drop down ==================================== */
+.tutorials--btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+    margin-right: 20px;
+}
+
+.students--btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+    margin-right: 20px;
+    
+}
+
+.courses--btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+    margin-right: 20px;
+}
+
+
+.tutorials--dropdown {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #ddd, -2px 2px 5px #ddd, 2px -2px 5px #ddd;
+}
+
+.tutorials--dropdown--btn {
+    color: #555;
+    display: block;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 75px;
+    font-size: 15px;
+}
+
+.tutorials--dropdown--btn:hover {
+    color: rgb(0, 173, 29);
+}
+
+.students--dropdown {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #ddd, -2px 2px 5px #ddd, 2px -2px 5px #ddd;
+}
+
+.students--dropdown--btn {
+    color: #555;
+    display: block;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.students--dropdown--btn:hover {
+    color: rgb(0, 173, 29);
+}
+
+.dropdown--sublink {
+    height: auto;
+    width: 150px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #ddd, -2px 2px 5px #ddd, 2px -2px 5px #ddd;
+}
+
+.dropdown__sublink {
+    display: block;
+    padding: 2px;
+    text-align: center;
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+
+.dropdown__sublink:hover {
+    color: rgb(0, 173, 29);
+}
+
+/* sublinks tutorials --------------------- */
+
+.tutorials--dropdown--sublink1 {
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn1:hover .tutorials--dropdown--sublink1{
+    display: block;
+}
+
+.tutorials--dropdown--sublink2 {
+    position: absolute;
+    top: 20px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn2:hover .tutorials--dropdown--sublink2{
+    display: block;
+}
+
+.tutorials--dropdown--sublink3 {
+    position: absolute;
+    top: 40px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn3:hover .tutorials--dropdown--sublink3{
+    display: block;
+}
+
+.tutorials--dropdown--sublink4 {
+    position: absolute;
+    top: 60px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn4:hover .tutorials--dropdown--sublink4{
+    display: block;
+}
+
+.tutorials--dropdown--sublink5 {
+    position: absolute;
+    top: 80px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn5:hover .tutorials--dropdown--sublink5{
+    display: block;
+}
+
+.tutorials--dropdown--sublink6 {
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn6:hover .tutorials--dropdown--sublink6{
+    display: block;
+}
+
+.tutorials--dropdown--sublink7 {
+    position: absolute;
+    top: 120px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn7:hover .tutorials--dropdown--sublink7{
+    display: block;
+}
+
+.tutorials--dropdown--sublink8 {
+    position: absolute;
+    top: 140px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn8:hover .tutorials--dropdown--sublink8{
+    display: block;
+}
+
+.tutorials--dropdown--sublink9 {
+    position: absolute;
+    top: 160px;
+    left: 210px;
+    display: none;
+}
+
+.tutorials--dropdown--btn9:hover .tutorials--dropdown--sublink9{
+    display: block;
+}
+
+/* sublinks students --------------------- */
+
+.students--dropdown--sublink1 {
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn1:hover .students--dropdown--sublink1{
+    display: block;
+}
+
+.students--dropdown--sublink2 {
+    position: absolute;
+    top: 20px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn2:hover .students--dropdown--sublink2{
+    display: block;
+}
+
+.students--dropdown--sublink3 {
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn3:hover .students--dropdown--sublink3{
+    display: block;
+}
+
+.students--dropdown--sublink4 {
+    position: absolute;
+    top: 60px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn4:hover .students--dropdown--sublink4{
+    display: block;
+}
+
+.students--dropdown--sublink5 {
+    position: absolute;
+    top: 80px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn5:hover .students--dropdown--sublink5{
+    display: block;
+}
+
+.students--dropdown--sublink6 {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn6:hover .students--dropdown--sublink6{
+    display: block;
+}
+
+.students--dropdown--sublink7 {
+    position: absolute;
+    top: 120px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn7:hover .students--dropdown--sublink7{
+    display: block;
+}
+
+.students--dropdown--sublink8 {
+    position: absolute;
+    top: 140px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn8:hover .students--dropdown--sublink8{
+    display: block;
+}
+
+.students--dropdown--sublink9 {
+    position: absolute;
+    top: 160px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn9:hover .students--dropdown--sublink9{
+    display: block;
+}
+
+.students--dropdown--sublink10 {
+    position: absolute;
+    top: 180px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn10:hover .students--dropdown--sublink10{
+    display: block;
+}
+
+.students--dropdown--sublink11 {
+    position: absolute;
+    top: 200px;
+    left: 240px;
+    display: none;
+}
+
+.students--dropdown--btn11:hover .students--dropdown--sublink11{
+    display: block;
+}
+
+/* header-dropdown ======================= */
+
+.fa-angle-right {
+    position: absolute;
+    right: 2%;
+}
+
+/* ================= */
+
+.tutorials--btn:hover {
+    color: rgb(0, 173, 29);
+}
+
+.tutorials--btn:hover .tutorials--dropdown {
+    display: block;
+}
+
+.students--btn:hover {
+    color: rgb(0, 173, 29);
+}
+
+.students--btn:hover .students--dropdown {
+    display: block;
+}
+
+.courses--btn:hover {
+    color: rgb(0, 173, 29);
+}
+
+.courses--btn:hover .courses--dropdown {
+    display: block;
+}
+
+/* Search bar --------------------- */
+
+.container--searchbar {
+    height: auto;
+    width: auto;
+    margin-left: -15px;
+    display: inline-block;
+}
+
+.search__box {
+    height: 40px;
+    width: 260px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.search__box--btn {
+    height: 40px;
+    width: 60px;
+    display: inline-block;
+    border: none;
+    background-color: green;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -60px;
+    cursor: pointer;
+}
+
+.search__box--btn:hover {
+    background-color: rgb(0, 177, 29);
+}
+
+.fa-search {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.hire__with__us--btn {
+    border: 2px solid green;
+    color: green;
+    border-radius: 5px;
+    padding: 8px 18px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.avtaar {
+    height: 50px;
+    width: 50px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.container--main--content {
+    height: auto;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.left--menu {
+    height: auto;
+    width: 18%;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 1px 1px 2px rgb(236, 236, 236), -1px -1px 2px rgb(235, 235, 235), -1px 1px 2px rgb(224, 224, 224), 1px -1px 2px rgb(235, 235, 235);
+}
+
+.left__menu__link {
+    color: #555;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 12px 12px;
+}
+
+.left__menu__link:hover {
+    background: rgba(0, 0, 0, 0.115);
+}
+
+.center--content {
+    height: auto;
+    width: 62%;
+    background-color: #f1f1f1;
+    margin: 10px 10px 10px 0;
+    box-shadow: 1px 1px 2px rgb(236, 236, 236), -1px -1px 2px rgb(235, 235, 235), -1px 1px 2px rgb(224, 224, 224), 1px -1px 2px rgb(235, 235, 235);
+}
+
+.center--content--block {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    border-left: 8px solid rgb(207, 207, 207);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+h6 {
+    color: #777;
+    padding: 6px 0;
+}
+
+h3 {
+    padding: 10px 0;
+    color: rgb(0, 138, 0);
+    cursor: pointer;
+}
+
+h3:hover {
+    color: rgb(218, 85, 37);
+}
+
+p {
+    padding: 5px 0;
+    color: #555555;
+    font-size: 17px;
+}
+
+.block--bottom--link {
+    margin-top: 20px;
+}
+
+.block__bottom__link {
+    padding: 6px 10px;
+    color: rgb(0, 136, 11);
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.block__bottom__link:hover {
+    background-color: rgb(0, 184, 0);
+    color: white;
+}
+
+.right--ads {    
+    height: 1000px;
+    width: 20%;
+    background-color: white;
+    margin: 10px 10px 10px 0;
+    box-shadow: 1px 1px 2px rgb(236, 236, 236), -1px -1px 2px rgb(235, 235, 235), -1px 1px 2px rgb(224, 224, 224), 1px -1px 2px rgb(235, 235, 235);
+}
+
+.right--ads img {
+    height: 440px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1085px) {
+    .hire__with__us--btn {
+        display: none;
+    }
+
+    .avtaar {
+        display: none;
+    }
+
+    .top--bars {
+        display: block;
+    }
+
+    .center--content {
+        width: 82%;
+    }
+
+    .right--ads {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .header--navbar {
+        display: none;
+    }
+
+    .container--header {
+        display: block;
+        height: 120px;
+    }
+
+    .header--logo {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container--searchbar {    
+        position: absolute;
+        top: 50px;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+
+    .center--content {
+        width: 100%;
+    }
+
+    .left--menu {
+        display: none;
+    }
+}
+
+.toggle--left--menu {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 1px 1px 2px rgb(173, 173, 173), -1px -1px 2px rgb(177, 177, 177), -1px 1px 2px rgb(175, 175, 175), 1px -1px 2px rgb(172, 172, 172);
+    display: none;
+    overflow: auto;
+    animation: showLeftMenu 0.5s ease forwards;
+}
+
+.show--left--menu {
+    display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(182, 182, 182); 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(199, 199, 199), rgb(68, 68, 68)) ;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0098b3; 
+}
+
+@keyframes showLeftMenu {
+    0%{margin-top: -1000px;}
+    100% {margin-top: 0px;}
+}

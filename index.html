@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GeeksforGeeks</title>
+</head>
+<body>
+    <div class="container--header">
+        <div class="top--bars"><i class="fa fa-bars" onclick="toggleLeftMenu()"></i></div>
+        <div class="header--logo">
+            <img class="header__logo" src="images/geeksforgeeks-18.png" alt="geeksforgeeks">
+        </div>
+        <div class="header--navbar">
+            <div class="tutorials--btn">Tutorials <i class="fa fa-angle-down"></i>
+                <div class="tutorials--dropdown">
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn1">Algorithms <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink1">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools1</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools1</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools1</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools1</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools1</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn2">Data Structures <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink2">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools2</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools2</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools2</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools2</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools2</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn3">Languages <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink3">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools3</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools3</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools3</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools3</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools3</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn4">Interview Corner <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink4">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools4</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools4</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools4</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools4</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools4</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn5">GATE <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink5">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools5</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools5</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools5</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools5</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools5</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn6">ISRO CS <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink6">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools6</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools6</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools6</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools6</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools6</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn7">UGC NET CS <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink7">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools7</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools7</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools7</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools7</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools7</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn8">CS Subjects <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink8">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools8</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools8</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools8</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools8</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools8</a>
+                        </div>
+                    </div>
+                    <div href="#" class="tutorials--dropdown--btn tutorials--dropdown--btn9">Web Technologies <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink tutorials--dropdown--sublink tutorials--dropdown--sublink9">
+                            <a class="dropdown__sublink tutorials__dropdown__sublink1">Powerful Tools9</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink2">Powerful Tools9</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink3">Powerful Tools9</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink4">Powerful Tools9</a>
+                            <a class="dropdown__sublink tutorials__dropdown__sublink5">Powerful Tools9</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="students--btn">Students <i class="fa fa-angle-down"></i>
+                <div class="students--dropdown">
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn1">Get Hired <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink1">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools1</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools1</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools1</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools1</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools1</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn2">Campus Ambassador program <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink2">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools2</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools2</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools2</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools2</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools2</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn3">Project <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink3">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools3</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools3</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools3</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools3</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools3</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn4">Geek Of the Month <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink4">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools4</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools4</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools4</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools4</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools4</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn5">Campus Geek of the Month <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink5">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools5</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools5</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools5</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools5</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools5</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn6">Placement Courses <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink6">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools6</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools6</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools6</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools6</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools6</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn7">Competitive Programming <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink7">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools7</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools7</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools7</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools7</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools7</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn8">Testimonials <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink8">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools8</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools8</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools8</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools8</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools8</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn9">Geek on the Top <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink9">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools9</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools9</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools9</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools9</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools9</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn10">Careers <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink10">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools10</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools10</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools10</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools10</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools10</a>
+                        </div>
+                    </div>
+                    <div href="#" class="students--dropdown--btn students--dropdown--btn11">Internship <i class="fa fa-angle-right"></i>
+                        <div class="dropdown--sublink students--dropdown--sublink students--dropdown--sublink11">
+                            <a class="dropdown__sublink students__dropdown__sublink1">Powerful Tools11</a>
+                            <a class="dropdown__sublink students__dropdown__sublink2">Powerful Tools11</a>
+                            <a class="dropdown__sublink students__dropdown__sublink3">Powerful Tools11</a>
+                            <a class="dropdown__sublink students__dropdown__sublink4">Powerful Tools11</a>
+                            <a class="dropdown__sublink students__dropdown__sublink5">Powerful Tools11</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="courses--btn">Courses</i></div>
+            
+        </div>
+        <div class="container--searchbar">
+            <input type="text" class="search__box" placeholder="Search...">
+            <span class="search__box--btn"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="hire--with--us">
+            <span class="hire__with__us--btn">Hire with us!</span>
+        </div>
+        <div class="avtaar"></div>
+    </div>
+    <div class="container--main--content">
+        <div class="left--menu">
+            <a href="#" class="left__menu__link">Write an Article</a>
+            <a href="#" class="left__menu__link">Courses @ GeeksforGeeks</a>
+            <a href="#" class="left__menu__link">Internships @ GeeksforGeeks</a>
+            <a href="#" class="left__menu__link">Coding practice</a>
+            <a href="#" class="left__menu__link">How to write an Interview Experience?</a>
+            <a href="#" class="left__menu__link">Must do Coding Questions Company-wise</a>
+            <a href="#" class="left__menu__link">Must do Codeing Questions Coding-wise</a>
+            <a href="#" class="left__menu__link">Basic</a>
+            <a href="#" class="left__menu__link">Easy</a>
+            <a href="#" class="left__menu__link">Medium</a>
+            <a href="#" class="left__menu__link">Hard</a>
+            <a href="#" class="left__menu__link">Expert</a>
+            <a href="#" class="left__menu__link">Step by Step Preparation</a>
+            <a href="#" class="left__menu__link">Comapany preparation</a>
+            <a href="#" class="left__menu__link">Top Topics</a>
+            <a href="#" class="left__menu__link">Company Specific Patience</a>
+            <a href="#" class="left__menu__link">Sofware Designing Patterns</a>
+            <a href="#" class="left__menu__link">Placement Preparation Course</a>
+            <a href="#" class="left__menu__link">Interview Corner</a>
+            <a href="#" class="left__menu__link">Recent Interview Experiences</a>
+            <a href="#" class="left__menu__link">GQ Home Page</a>
+            <a href="#" class="left__menu__link">Quiz Corner</a>
+            <a href="#" class="left__menu__link">LMN's</a>
+            <a href="#" class="left__menu__link">What's New?</a>
+            <a href="#" class="left__menu__link">Leaderboard !!</a>
+            <a href="#" class="left__menu__link">Topic-wise Practice</a>
+            <a href="#" class="left__menu__link">Subjective Problems</a>
+            <a href="#" class="left__menu__link">Difficulty Level - School</a>
+            <a href="#" class="left__menu__link">Difficulty Level - Basic</a>
+            <a href="#" class="left__menu__link">Difficulty Level - Easy</a>
+            <a href="#" class="left__menu__link">Difficulty Level - Medium</a>
+            <a href="#" class="left__menu__link">Difficulty Level - Hard</a>
+            <a href="#" class="left__menu__link">Explore More...</a>
+            <a href="#" class="left__menu__link">C</a>
+            <a href="#" class="left__menu__link">C++</a>
+            <a href="#" class="left__menu__link">Java</a>
+            <a href="#" class="left__menu__link">Python</a>
+            <a href="#" class="left__menu__link">SQL</a>
+            <a href="#" class="left__menu__link">PHP</a>
+            <a href="#" class="left__menu__link">JavaScript</a>
+        </div>
+        <div class="center--content">
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+            <div class="center--content--block">
+                <h6>Featured Artical</h6>
+                <h3>Must Do Coding Questions for the companies like Amazon, Google etc</h3>
+                <p>As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked questions....</p>
+                <div class="block--bottom--link">
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                    <a href="#" class="block__bottom__link">Articles</a>
+                </div>
+            </div>
+        </div>
+        <div class="right--ads">
+            <img src="images/ads.jpg" alt="Ads">
+            <img src="images/ads.jpg" alt="Ads">
+            <img src="images/ads.jpg" alt="Ads">
+            <img src="images/ads.jpg" alt="Ads">
+        </div>
+    </div>
+    <div class="toggle--left--menu">
+        <a href="#" class="left__menu__link">Write an Article</a>
+        <a href="#" class="left__menu__link">Courses @ GeeksforGeeks</a>
+        <a href="#" class="left__menu__link">Internships @ GeeksforGeeks</a>
+        <a href="#" class="left__menu__link">Coding practice</a>
+        <a href="#" class="left__menu__link">How to write an Interview Experience?</a>
+        <a href="#" class="left__menu__link">Must do Coding Questions Company-wise</a>
+        <a href="#" class="left__menu__link">Must do Codeing Questions Coding-wise</a>
+        <a href="#" class="left__menu__link">Basic</a>
+        <a href="#" class="left__menu__link">Easy</a>
+        <a href="#" class="left__menu__link">Medium</a>
+        <a href="#" class="left__menu__link">Hard</a>
+        <a href="#" class="left__menu__link">Expert</a>
+        <a href="#" class="left__menu__link">Step by Step Preparation</a>
+        <a href="#" class="left__menu__link">Comapany preparation</a>
+        <a href="#" class="left__menu__link">Top Topics</a>
+        <a href="#" class="left__menu__link">Company Specific Patience</a>
+        <a href="#" class="left__menu__link">Sofware Designing Patterns</a>
+        <a href="#" class="left__menu__link">Placement Preparation Course</a>
+        <a href="#" class="left__menu__link">Interview Corner</a>
+        <a href="#" class="left__menu__link">Recent Interview Experiences</a>
+        <a href="#" class="left__menu__link">GQ Home Page</a>
+        <a href="#" class="left__menu__link">Quiz Corner</a>
+        <a href="#" class="left__menu__link">LMN's</a>
+        <a href="#" class="left__menu__link">What's New?</a>
+        <a href="#" class="left__menu__link">Leaderboard !!</a>
+        <a href="#" class="left__menu__link">Topic-wise Practice</a>
+        <a href="#" class="left__menu__link">Subjective Problems</a>
+        <a href="#" class="left__menu__link">Difficulty Level - School</a>
+        <a href="#" class="left__menu__link">Difficulty Level - Basic</a>
+        <a href="#" class="left__menu__link">Difficulty Level - Easy</a>
+        <a href="#" class="left__menu__link">Difficulty Level - Medium</a>
+        <a href="#" class="left__menu__link">Difficulty Level - Hard</a>
+        <a href="#" class="left__menu__link">Explore More...</a>
+        <a href="#" class="left__menu__link">C</a>
+        <a href="#" class="left__menu__link">C++</a>
+        <a href="#" class="left__menu__link">Java</a>
+        <a href="#" class="left__menu__link">Python</a>
+        <a href="#" class="left__menu__link">SQL</a>
+        <a href="#" class="left__menu__link">PHP</a>
+        <a href="#" class="left__menu__link">JavaScript</a>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
